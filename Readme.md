@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Артем Матусевич](https://up.htmlacademy.ru/javascript/29/user/39843).
-* Наставник: [Артем Мошкин](https://up.htmlacademy.ru/javascript/29/user/1863817).
+* Наставник: [Макарий Переймак](https://up.htmlacademy.ru/javascript/29/user/1863817).
 
 ---
 
