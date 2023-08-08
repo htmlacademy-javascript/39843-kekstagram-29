@@ -19,3 +19,18 @@ const isPalindrom = (rawString) => {
 isPalindrom('Лёша на полке клопа нашёл'); //true
 isPalindrom('ДовОд'); //true
 isPalindrom('Кекс'); //false
+
+// Функция для проверки встречи в рабочее время
+const getMinsFromTime = function (timeString) {
+  const [hours, minutes] = timeString.split(':');
+  return hours * 60 + Number(minutes);
+};
+
+const checkMeetingTime = function (workStart, workEnd, meetingStart, meetingDuration) {
+  const workStartInMins = getMinsFromTime(workStart);
+  const workEndInMins = getMinsFromTime(workEnd);
+  const meetingStartInMins = getMinsFromTime(meetingStart);
+
+  console.log(meetingStartInMins >= workStartInMins && meetingStartInMins + meetingDuration <= workEndInMins);
+};
+checkMeetingTime('08:00', '18:00', '14:00', 90);
